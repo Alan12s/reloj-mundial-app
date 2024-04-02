@@ -1,0 +1,150 @@
+/* App general */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2; /* Cambiar el fondo a un tono claro */
+  font-family: Arial, sans-serif;
+}
+
+/* Formulario */
+.Formulario {
+  background-color: #fff; /* Color de fondo blanco */
+  border: 2px solid #ccc; /* Borde gris */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 300px;
+  color: #333; /* Texto oscuro */
+}
+
+/* Contenedor del reloj */
+.ClockContainer {
+  width: 100%;
+  height: 200px; /* Altura reducida para mayor simplicidad */
+  background-color: #f2f2f2; /* Color de fondo claro */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: relative;
+}
+
+/* Reloj */
+.Clock {
+  width: 150px; /* Tamaño reducido para mayor simplicidad */
+  height: 150px; /* Tamaño reducido para mayor simplicidad */
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333; /* Texto oscuro */
+  font-size: 1.5rem; /* Tamaño de fuente reducido */
+  position: relative;
+}
+
+/* Opciones */
+.Options {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.Options h2 {
+  margin-bottom: 10px;
+}
+
+.Options select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+}
+
+/* Menú */
+.Menu {
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.Menu h2 {
+  color: #333; /* Texto oscuro */
+}
+
+.Menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Menu ul li {
+  cursor: pointer;
+  padding: 5px 0;
+  color: #333; /* Texto oscuro */
+  transition: color 0.3s ease;
+}
+
+.Menu ul li:hover {
+  color: #3498db; /* Texto azul cuando se pasa el ratón */
+}
+
+/* Estilos para el modo oscuro */
+.dark {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+}
+
+.dark .Formulario {
+  background-color: #444; /* Color de fondo para el formulario en modo oscuro */
+  border-color: #666; /* Borde en modo oscuro */
+  color: #fff; /* Texto en modo oscuro */
+}
+
+.dark .ClockContainer {
+  background-color: #555; /* Color de fondo para el contenedor del reloj en modo oscuro */
+}
+
+.dark .Clock {
+  background-color: #666; /* Fondo para el reloj en modo oscuro */
+  color: #fff; /* Texto en modo oscuro */
+}
+
+.dark .Menu {
+  background-color: #444; /* Fondo del menú en modo oscuro */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Sombra suave en modo oscuro */
+}
+
+.dark .Menu h2 {
+  color: #fff; /* Texto en modo oscuro */
+}
+
+.dark .Menu ul li {
+  color: #fff; /* Texto en modo oscuro */
+}
+
+.dark .Menu ul li:hover {
+  color: #3498db; /* Texto azul cuando se pasa el ratón en modo oscuro */
+}
+
+.dark .Options select {
+  border-color: #3498db;
+}
+.DarkModeButton {
+  background-color: #3498db; /* Color de fondo azul */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Borde redondeado */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cursor apuntador */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.DarkModeButton.dark {
+  background-color: #666; /* Color de fondo gris oscuro en modo oscuro */
+}
